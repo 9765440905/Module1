@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index8.css">
+</head>
+<body>
+    <fieldset class="app">
+        <legend><strong>Job Application</strong></legend>
+    <form method="Post">
+        <label for="name">UserName</label><br>
+        <input type="text" id="name" placeholder="UserName" name="username"><br><br><label for="password">Password</label><br>
+        <input type="password" id="password" placeholder="Password" name="password"><br><br>
+        <label for="mailid">MailId</label><br>
+        <input type="email" id="mailid" placeholder="MailId" name="Mailid"><br><br>
+        <label for="dob">Date of Birth</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+        <label>Gender</label><br>
+        <input type="radio" name="gender" id="male" value="gender"><span for="gender">Male</span>
+        <input type="radio" name="gender" id="female" value="gender"><span for="gender">Female</span><br><br>
+        <label for="number">Phone Number</label><br>
+        <input type="tel" id="number" name="number"><br><br>
+        <label for="exp">Experience</label><br>
+        <input type="number" name="exp" id="exp" min="0" max="8">Years<br><br>
+        <label for="network">Social Network</label><br>
+        <input type="url" id="network"  name="network" ><br><br>
+        <label for="resume">Upload Your Resume</label><br>
+        <input type="file" for="resume" name="resume" value="resume"><br><br>
+        <label for="appointment">Day:Monday to Friday</label><br>
+        <input type="date" id="appointment" name="appointment" value="appointment"><br><br>
+        <label for="time">Time:9.00Am to 5.00Pm</label><br>
+        <input type="time" id="time" name="time" value="time"><br><br>
+        <label>Post Name</label><br>
+        <input type="checkbox" name="Position[]"id="frontend" value="Frontend"> <label for="frontend">FrontEnd</label>
+        <input type="checkbox" name="Position[]" id="backend" value="Backend"><label for="backend">Backend</label>
+        <input type="checkbox" name="Position[]" id="fullstack" value="Fullstack"><label for="fullstack">Fullstack</label><br><br>
+        <label for="ctc">Expected CTC</label><br>
+        <input type="range"  id="ctcamount"step="1000" min="10000" max="100000" onchange="changew(this.value)">
+       <input type="number" placeholder="CTC"   min="10000" max="100000"  id="box"><br><br>
+      <input type="reset" name="reset" class="clear" value="clear">
+       <input type="submit" class="submit" value="submit" >
+    </form>
+       </fieldset>
+       <script>
+       function changew(v)
+       {
+           document.getElementById("box").value=v;
+       }
+ </script>
+  </body>
+</html>

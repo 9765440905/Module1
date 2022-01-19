@@ -1,0 +1,19 @@
+.app{
+    background-color:lightcyan;
+    border-radius:2%;
+    min-width:16rem;
+}
+legend{
+    background-color:yellow;
+    margin-left:1rem;
+
+}
+
+.submit{
+    
+    width:9rem;
+    margin-left: 1.5rem;
+}
+.clear{
+    margin-left: 1rem;
+}
